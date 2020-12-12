@@ -7,10 +7,6 @@ const app = express();
 //Setting an initial port
 const PORT = 8080;
 
-//app.get("/", function (req, res) {
-//res.send("hello world");
-//});
-
 //Setting up app to handle data parsing
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
