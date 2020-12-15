@@ -1,6 +1,6 @@
 # Note Taker
 
-## This app is deployed on Heroku.
+## This app is deployed on Heroku. https://ads-notetaker.herokuapp.com/notes
 
 ## License
 
