@@ -1,6 +1,6 @@
 const path = require("path");
 const db = require("../db/db.json");
-const fs = require("fs");
+
 module.exports = function (app) {
   app.get("/api/notes", function (req, res) {
     res.json(db);
@@ -9,6 +9,8 @@ module.exports = function (app) {
   app.post("/api/notes", function (req, res) {
     const note = req.body;
     const id = db.length;
+
+    //object template for new note
     const newNote = {
       title: note.title,
       text: note.text,
@@ -22,7 +24,9 @@ module.exports = function (app) {
     for (let i = 0; i < db.length; i++) {
       console.log(db[i].id, "Object id");
       console.log(req.params.id, "Requested delete");
+      // grabbing object from db array
       if (db[i].id == req.params.id) {
+        // removing object at selected index
         db.splice(i, 1);
         console.log(db);
       }
