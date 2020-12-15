@@ -8,6 +8,8 @@ module.exports = function (app) {
 
   app.post("/api/notes", function (req, res) {
     const note = req.body;
+
+    //id is the where the object is in the array
     const id = db.length;
 
     //object template for new note
@@ -22,8 +24,6 @@ module.exports = function (app) {
 
   app.delete("/api/notes/:id", function (req, res) {
     for (let i = 0; i < db.length; i++) {
-      console.log(db[i].id, "Object id");
-      console.log(req.params.id, "Requested delete");
       // grabbing object from db array
       if (db[i].id == req.params.id) {
         // removing object at selected index
