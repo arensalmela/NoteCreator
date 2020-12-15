@@ -72,7 +72,7 @@ const handleNoteDelete = function (event) {
   if (activeNote.id === note.id) {
     activeNote = {};
   }
-
+  console.log(note.id);
   deleteNote(note.id).then(() => {
     getAndRenderNotes();
     renderActiveNote();
@@ -103,6 +103,7 @@ const handleRenderSaveBtn = function () {
 
 // Render's the list of note titles
 const renderNoteList = (notes) => {
+  console.log(notes, "Render Note List");
   $noteList.empty();
 
   const noteListItems = [];

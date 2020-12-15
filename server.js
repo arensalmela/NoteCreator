@@ -2,7 +2,7 @@
 
 const express = require("express");
 const app = express();
-//const path = require("path");
+const path = require("path");
 
 //Setting an initial port
 const PORT = 8080;
