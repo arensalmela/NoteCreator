@@ -2,6 +2,8 @@
 
 ## This app is deployed on Heroku. https://ads-notetaker.herokuapp.com/notes
 
+### Collaborated with https://github.com/ReindeerCode & https://github.com/smanter82
+
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
