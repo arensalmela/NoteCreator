@@ -1,6 +1,6 @@
 # Note Taker
 
-## This app is deployed on Heroku. https://ads-notetaker.herokuapp.com/notes
+## This app is deployed on Heroku. https://ads-notetaker.herokuapp.com
 
 ### Collaborated with https://github.com/ReindeerCode & https://github.com/smanter82
 
